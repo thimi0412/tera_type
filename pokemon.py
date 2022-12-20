@@ -40,7 +40,7 @@ class Pokemon:
         
         return week_types
     
-    def best_tera_type(self) -> Type:
+    def better_tera_type(self) -> Type:
         result = []
         for week_type, magnification in self.week_types.items():
             for t in Type:
@@ -53,7 +53,7 @@ class Pokemon:
 
 def main() -> None:
     poke = Pokemon("a", Type.GRASS, Type.DARK)
-    poke.best_tera_type()
+    poke.better()
 
 
 
